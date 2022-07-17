@@ -57,22 +57,3 @@ def fix_spaces(text):
     text = re.sub('([&@])', r' \1 ', text)  # Space before and after of "&" and "@"
     text = re.sub(' +', ' ', text)  # Remove multiple space
     return text
-
-def site_names(txt):
-    sites = ['دیجی کالا', 'دیجیمگ', 'کجارو', 'دیجی کالا مگ', 'چهطور', 'زومجی', 'فیدیبو', 'تکفارس', 'زومیت', 'موویمگ', 'گیمفا', 'انزل وب', 'غذالند', 'هنر آنلاین', 'چوک', 'دلتاپیام', 'تابناک', 'دیجیکالا']
-    for i in sites:
-        txt = txt.replace(i, " ")
-    return txt
-    # if "وبسایت":
-    #     print(1)
-    #     txt1 = re.sub("وبسایت (\w+)", "ؤؤؤؤ", txt)
-    #     return txt1
-    # if "وب‌سایت" in txt:
-    #     print(2)
-    #     return re.sub("وب‌سایت(\w+)", "وب‌سایت", txt)
-    # if "وب سایت" in txt:
-    #     print(3)
-    #     return re.sub("وب سایت (\w+)", "وب سایت", txt)
-    # if "سایت" in txt:
-    #     print(4)
-    #     return re.sub("سایت (\w+)", "ؤؤؤ", txt)
