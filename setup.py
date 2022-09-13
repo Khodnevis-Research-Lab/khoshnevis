@@ -6,7 +6,7 @@ from setuptools import setup
 
 setup(
 	name='khoshnevis',
-	version='0.0.9',
+	version='0.1.5',
 	description='Khodnevis Normalizer',
 	author='khodnevisAI',
 	author_email='khodnevis.group@gmail.com',
@@ -20,5 +20,5 @@ setup(
 		'Natural Language :: Persian',
 		'Programming Language :: Python :: 3',
 	],
-	install_requires=['parsivar==0.2.3'],
+	install_requires=['parsivar==0.2.3', 'demoji==1.1.0'],
 )
